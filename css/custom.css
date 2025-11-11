@@ -5,23 +5,16 @@
 /* 1. TIPOGRAFÍA (Cinzel para títulos, Lora para cuerpo) */
 h1, h2, h3, h4 {
     font-family: 'Cinzel', serif; 
-    font-weight: 700; 
+    font-weight: 600; 
 }
 
 body, p, a, input, button {
     font-family: 'Lora', serif; 
-    font-weight: 200;
+    font-weight: 50;
 }
 
 
 /* 2. COLORIMETRÍA BLUEGRASS */
-
-/* Sobreescribir Botones y Fondos Primarios de Bootstrap */
-/* Usamos !important para asegurar que sobreescribe el color por defecto (azul) */
-.btn-primary, .bg-primary {
-    background-color: #823329; /* Marrón Caoba */
-    border-color: #823329;
-}
 
 /* Color del texto principal y títulos */
 h1, h2, h3, h4, p {
@@ -33,3 +26,9 @@ body {
     background-color: #F9F7F0; /* Crema/Hueso */
 }
 
+/* Aumentamos el tamaño de la fuente para el correo/teléfono y corregimos el interlineado */
+.single-contact-info p {
+    font-size: 14px !important; /* Prueba con 18px, 20px, o 24px según lo que necesites */
+    line-height: 1.3 !important; /* Evita que el texto se separe demasiado (como pasaba antes) */
+    font-weight: 400 !important; /* Aseguramos que se vea con un peso de lectura normal */
+}
